@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="4259414467">
+    <data-source source="LOCAL" name="Sqlite (Xerial) - Exercise_11" uuid="78ba4d05-710f-45aa-8b9f-a93f483977c9">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:B:\Users\hffri\Documents\Exercise_11</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Sqlite (Xerial) - identifier.sqlite" uuid="f53140e6-706f-4a67-b61e-2d5133831548">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:identifier.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Sqlite (Xerial) - questionDB.sqlite" uuid="2239c237-1529-4e5d-90d4-f3f95d1ff133">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../Exercise_11\questionDB.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="questionDB.db" uuid="ab702d68-8151-4fa7-ae24-a30788dbc9d1">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/questionDB.sqlite</jdbc-url>
+    </data-source>
+  </component>
+</project>

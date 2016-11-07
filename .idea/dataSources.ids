@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Sqlite (Xerial) - Exercise_11" uuid="78ba4d05-710f-45aa-8b9f-a93f483977c9">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Sqlite (Xerial) - identifier.sqlite" uuid="f53140e6-706f-4a67-b61e-2d5133831548">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Sqlite (Xerial) - questionDB.sqlite" uuid="2239c237-1529-4e5d-90d4-f3f95d1ff133">
+    <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="Answers" schema="" catalog="" type="TABLE">
+      <column name="answer_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="question_id_fk" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="answer" sqlType="VARCHAR(264)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="answer_id"/>
+    </table>
+    <table name="Questions" schema="" catalog="" type="TABLE">
+      <column name="question_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="question" sqlType="VARCHAR(264)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="question_id"/>
+    </table>
+    <table name="sqlite_sequence" schema="" catalog="" type="TABLE">
+      <column name="name" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="seq" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+    </table>
+  </data-source>
+  <data-source name="questionDB.db" uuid="ab702d68-8151-4fa7-ae24-a30788dbc9d1">
+    <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="Answers" schema="" catalog="" type="TABLE">
+      <column name="answer_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="question_id_fk" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="answer" sqlType="VARCHAR(264)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="answer_id"/>
+    </table>
+    <table name="Questions" schema="" catalog="" type="TABLE">
+      <column name="question_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="question" sqlType="VARCHAR(264)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="question_id"/>
+    </table>
+    <table name="sqlite_sequence" schema="" catalog="" type="TABLE">
+      <column name="name" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="seq" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+    </table>
+  </data-source>
+</component>
