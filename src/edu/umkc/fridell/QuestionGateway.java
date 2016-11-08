@@ -38,7 +38,7 @@ public class QuestionGateway {
     try {
       assert conn != null;
       Statement statement = SqliteConnection.createStatement();
-      statement.executeUpdate("INSERT INTO Questions (question) Values(" + question.question +")");
+      statement.executeUpdate("INSERT INTO Questions (question) Values(\"" + question.question + "\")");
 
     } catch (SQLException e) {
       e.printStackTrace();
