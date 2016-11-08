@@ -13,18 +13,18 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/APIGetQuestions")
 public class APIGetQuestions extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-    public APIGetQuestions() {
-        super();
-    }
+  private static final long serialVersionUID = 1L;
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	     response.setContentType("application/json");
-	        // Get the printwriter object from response to write the required json object to the output stream 
-	        PrintWriter out = response.getWriter();
+  public APIGetQuestions() {
+    super();
+  }
 
-	        new Gson().toJson(QuestionGateway.questions, out);
-	        out.flush();
-	}
+  protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    response.setContentType("application/json");
+    // Get the printwriter object from response to write the required json object to the output stream
+    PrintWriter out = response.getWriter();
+
+    new Gson().toJson(QuestionGateway.questions, out);
+    out.flush();
+  }
 }
