@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Sqlite (Xerial) - Exercise_11" uuid="78ba4d05-710f-45aa-8b9f-a93f483977c9">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <secret-storage>memory</secret-storage>
-    </data-source>
-    <data-source name="Sqlite (Xerial) - identifier.sqlite" uuid="f53140e6-706f-4a67-b61e-2d5133831548">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <secret-storage>memory</secret-storage>
-    </data-source>
     <data-source name="Sqlite (Xerial) - questionDB.sqlite" uuid="2239c237-1529-4e5d-90d4-f3f95d1ff133">
-      <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <secret-storage>memory</secret-storage>
-    </data-source>
-    <data-source name="questionDB.db" uuid="ab702d68-8151-4fa7-ae24-a30788dbc9d1">
       <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>memory</secret-storage>
