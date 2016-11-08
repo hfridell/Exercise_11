@@ -1,6 +1,7 @@
 package edu.umkc.fridell;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -19,9 +20,7 @@ public class QuestionGateway {
   public static ArrayList<Question> questions;
   static {
     questions = new ArrayList<>();
-    Connection conn = SqliteConnection.connect();
     try {
-      assert conn != null;
       Statement statement = SqliteConnection.createStatement();
       ResultSet rs = statement.executeQuery("select * from Questions ORDER BY question_id ASC ;");
 
@@ -32,5 +31,18 @@ public class QuestionGateway {
     } catch (SQLException e) {
       e.printStackTrace();
     }
+  }
+
+  public static void push(Question question) {
+    Connection conn = SqliteConnection.connect();
+    try {
+      assert conn != null;
+      Statement statement = SqliteConnection.createStatement();
+      statement.executeUpdate("INSERT INTO Questions (question) Values(" + question.question +")");
+
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+    questions.add(question);
   }
 }

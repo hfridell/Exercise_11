@@ -29,7 +29,7 @@ public class ShowQuestions extends HttpServlet {
 	        out.println("<body>");
 	        out.println("<h1>Questions</h1>");
 	        
-	        List<Question> questions = QuestionGateway.mock;
+	        List<Question> questions = QuestionGateway.questions;
 	        int count = 0;
 	        for (Question q : questions) {
 	        	count++;
@@ -47,7 +47,7 @@ public class ShowQuestions extends HttpServlet {
 	        
 	        String theQuestion = request.getParameter("theQuestion");
 	        
-	        QuestionGateway.mock.add(new Question(7,theQuestion));
+	        QuestionGateway.push(new Question(QuestionGateway.questions.size()+1 ,theQuestion));
 	       
 	        response.sendRedirect("Questions");
 	}

@@ -1,5 +1,6 @@
 package edu.umkc.fridell;
 
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,6 +11,9 @@ public class SqliteConnection {
   private static Connection conn = null;
 
   public static Connection connect() {
+    if (conn != null) {
+      return conn;
+    }
     try {
       Class.forName("org.sqlite.JDBC");
       // db parameters

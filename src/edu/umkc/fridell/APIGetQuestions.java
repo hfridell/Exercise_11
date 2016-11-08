@@ -1,5 +1,7 @@
 package edu.umkc.fridell;
 
+import com.google.gson.Gson;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -22,7 +24,7 @@ public class APIGetQuestions extends HttpServlet {
 	        // Get the printwriter object from response to write the required json object to the output stream 
 	        PrintWriter out = response.getWriter();
 
-	        out.print("Replace this string with a JSON array of questions");
+	        new Gson().toJson(QuestionGateway.questions, out);
 	        out.flush();
 	}
 }
