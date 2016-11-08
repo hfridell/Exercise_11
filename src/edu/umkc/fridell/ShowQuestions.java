@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/Questions")
+@WebServlet("/questions")
 public class ShowQuestions extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
@@ -49,7 +49,7 @@ public class ShowQuestions extends HttpServlet {
 
     QuestionGateway.push(new Question(QuestionGateway.questions.size() + 1, theQuestion));
 
-    response.sendRedirect("Questions");
+    response.sendRedirect("questions");
   }
 
 }
