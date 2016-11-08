@@ -33,7 +33,7 @@ public class ShowQuestions extends HttpServlet {
     int count = 0;
     for (Question q : questions) {
       count++;
-      out.print("<p>" + count + ". <a href=\"Answers?id=3\">" + q.question + "</a></p>");
+      out.print("<p>" + count + ". <a href=\"answers?id=" + q.id + "\">" + q.question + "</a></p>");
     }
     out.println("<form method=\"POST\" action=\"Questions\">");
     out.println("<p><input type=\"text\" name=\"theQuestion\" size=\"50\"> <input type=\"submit\" value=\"Add Question\"></p>");
