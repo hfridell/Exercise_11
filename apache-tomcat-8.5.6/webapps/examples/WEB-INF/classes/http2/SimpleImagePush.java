@@ -43,7 +43,7 @@ public class SimpleImagePush extends HttpServlet {
         PrintWriter pw = resp.getWriter();
         pw.println("<html>");
         pw.println("<body>");
-        pw.println("<p>The following image was provided via a push request.</p>");
+        pw.println("<p>The following image was provided via a newQuestion request.</p>");
         pw.println("<img src=\"" + req.getContextPath() + "/servlets/images/code.gif\"/>");
         pw.println("</body>");
         pw.println("</html>");

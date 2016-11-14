@@ -163,7 +163,7 @@
                     var functionQueue = [];
 
                     this.callFunction = function(func) {
-                        // If message processing is paused, we push it
+                        // If message processing is paused, we newQuestion it
                         // into the queue - otherwise we process it directly.
                         if (pauseProcessing) {
                             functionQueue.push(func);

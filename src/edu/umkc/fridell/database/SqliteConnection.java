@@ -1,6 +1,6 @@
-package edu.umkc.fridell;
+package edu.umkc.fridell.database;
 
-import java.sql.PreparedStatement;
+
 import java.sql.SQLException;
 import java.sql.Connection;
 import java.sql.DriverManager;

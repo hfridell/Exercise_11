@@ -1,14 +1,15 @@
-package edu.umkc.fridell;
+package edu.umkc.fridell.model;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import edu.umkc.fridell.database.SqliteConnection;
 
-public class QuestionGateway {
+
+public class QuestionModel {
   public static ArrayList<Question> mock;
 	static {
 		mock = new ArrayList<Question>();
@@ -33,7 +34,7 @@ public class QuestionGateway {
     }
   }
 
-  public static void push(Question question) {
+  public static void newQuestion(Question question) {
     Connection conn = SqliteConnection.connect();
     try {
       assert conn != null;

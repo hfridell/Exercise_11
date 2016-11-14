@@ -1,20 +1,21 @@
-package edu.umkc.fridell;
+package edu.umkc.fridell.model;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import edu.umkc.fridell.database.SqliteConnection;
 
-public class AnswerGateway {
 
-  public ArrayList<Answer> fetch(Question question) {
-    return fetch(question.id);
+public class AnswerModel {
+
+  public ArrayList<Answer> getAnswers(Question question) {
+    return getAnswers(question.id);
   }
 
-  public ArrayList<Answer> fetch(int questionId) {
+  public ArrayList<Answer> getAnswers(int questionId) {
     ArrayList<Answer> answers = new ArrayList<>();
     try {
       Statement statement = SqliteConnection.createStatement();
@@ -30,12 +31,12 @@ public class AnswerGateway {
   return answers;
   }
 
-  public static void push(Answer Answer) {
+  public static void addAnswer(int questionId, String answer) {
     Connection conn = SqliteConnection.connect();
     try {
       assert conn != null;
       Statement statement = SqliteConnection.createStatement();
-      statement.executeUpdate("INSERT INTO Answers (question_id_fk, answer) Values(\"" + Answer.questionId + ", " + Answer.answer + "\")");
+      statement.executeUpdate("INSERT INTO Answers (question_id_fk, answer) Values(" + questionId + ", \"" + answer + "\")");
 
     } catch (SQLException e) {
       e.printStackTrace();
